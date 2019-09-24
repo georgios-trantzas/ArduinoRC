@@ -1,0 +1,314 @@
+<!-- Copyright 2019 Georgios Trantzas
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+                http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+
+-->
+
+<resources>
+
+    <!-- BASE APPLICATION THEMES -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="WhiteTheme" parent="@style/AppTheme">
+
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+    </style>
+
+    <style name="BlueTheme" parent="@style/AppTheme">
+
+        <item name="android:statusBarColor">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+    </style>
+
+
+    <!-- THEMES FOR MAIN ACTIVITY -->
+
+    <style name="main_activity_main_image" >
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">3</item>
+
+    </style>
+
+    <style name="main_activity_connection_message">
+
+        <item name="android:textColor">@color/darkGray</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+
+    </style>
+
+    <style name="main_activity_navigation_buttons" parent="Widget.AppCompat.Button.Borderless.Colored">
+
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorAccent</item>
+
+    </style>
+
+
+    <!-- THEMES FOR DEVICE LIST ITEM -->
+
+    <style name="device_list_item_icon">
+
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_width">56dp</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+
+    </style>
+
+    <style name="device_list_item_name">
+
+        <item name="android:gravity">bottom</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_toRightOf">@id/device_list_item_icon</item>
+
+    </style>
+
+    <style name="device_list_item_address">
+
+        <item name="android:gravity">top</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/darkGray</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:layout_below">@id/device_list_item_name</item>
+        <item name="android:layout_toRightOf">@id/device_list_item_icon</item>
+    </style>
+
+
+    <!-- THEMES FOR ABOUT ACTIVITY -->
+
+    <style name="about_activity_back_button" >
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+    <style name="about_activity_circular_image_view" >
+
+        <item name="android:layout_width">160dp</item>
+        <item name="android:layout_height">160dp</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:layout_marginBottom">24dp</item>
+
+    </style>
+
+    <style name="about_activity_header" >
+
+        <item name="android:textColor">@color/darkGray</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">24dp</item>
+
+    </style>
+
+    <style name="about_activity_first_main_text" >
+
+        <item name="android:layout_width">240dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
+    <style name="about_activity_second_main_text" >
+
+        <item name="android:layout_width">240dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">24dp</item>
+
+    </style>
+
+    <style name="about_activity_project_link" >
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+         <item name="android:layout_marginTop">24dp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="about_activity_libraries_button" parent="@style/Widget.AppCompat.Button.Colored">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">48dp</item>
+
+    </style>
+
+
+    <!-- THEMES FOR ABOUT DIALOG -->
+
+    <style name="about_dialog_main_title" >
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="about_dialog_library_name" >
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="about_dialog_copyright_note" >
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+    <style name="about_dialog_library_link" >
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:autoLink">all</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+    <style name="about_dialog_linear_layout" >
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+
+    </style>
+
+    <style name="about_dialog_ok_button" parent="@style/Widget.AppCompat.Button.Borderless.Colored" >
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">end</item>
+
+    </style>
+
+
+    <!-- THEMES FOR CONTROLLER ACTIVITY -->
+
+    <style name="controller_activity_driver_buttons" >
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_columnWeight">1</item>
+
+
+    </style>
+
+    <style name="controller_activity_navigation_buttons" parent="Widget.AppCompat.Button.Borderless.Colored">
+
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+
+    <!-- THEMES FOR KEYS DIALOG -->
+
+    <style name="keys_dialog_main_title" >
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+
+    </style>
+
+    <style name="keys_dialog_field_title" >
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/darkGray</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginRight">16dp</item>
+
+    </style>
+
+    <style name="keys_dialog_edit_text" >
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/colorAccent</item>
+        <item name="android:textColor">@color/darkGray</item>
+
+    </style>
+
+    <style name="keys_dialog_save_button" parent="@style/Widget.AppCompat.Button.Borderless.Colored" >
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_below">@id/dialog_grid_view</item>
+
+    </style>
+
+</resources>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,99 @@
+<!-- Copyright 2019 Georgios Trantzas
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+                http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+
+-->
+
+<resources>
+
+    <string name="app_name">Arduino RC</string>
+
+    <!-- MAIN ACTIVITY -->
+
+    <!-- TOAST MASSAGES -->
+    <string name="rc_disconnected_toast">RC vehicle disconnected!</string>
+    <string name="no_bluetooth_support_toast">Your device doesn\'t support bluetooth.</string>
+    <string name="connection_failed_toast">Connection failed!</string>
+    <string name="device_is_connected_toast">Vehicle is connected.</string>
+
+    <!-- DIALOG TITLE -->
+    <string name="main_activity_paired_devices_dialog_title">Paired Devices</string>
+
+    <!-- TEXT VIEWS -->
+    <string name="main_activity_connection_message">Please connect your RC vehicle</string>
+
+    <!-- BUTTONS -->
+    <string name="main_activity_paired_devices_button">Paired Devices</string>
+    <string name="main_activity_about_button">About</string>
+
+
+
+
+    <!-- ABOUT ACTIVITY -->
+
+    <!-- TEXT VIEWS -->
+
+    <string name="about_activity_first_main_text">This app is a simple controller for Arduino bluetooth vehicles. Bluetooth keys can be changed on controller screen.</string>
+    <string name="about_activity_second_main_text">Arduino RC by Georgios Trantzas is licensed under Apache Licence 2.0.</string>
+    <string name="about_activity_project_link">Click here to see the source code.</string>
+
+    <!-- BUTTONS -->
+
+    <string name="about_activity_libraries_button">Open source libraries</string>
+
+
+
+
+    <!-- ABOUT DIALOG -->
+
+    <!-- TEXT VIES -->
+    <string name="about_dialog_main_title">Open source libraries</string>
+    <string name="about_dialog_library_name">CircularImageView</string>
+    <string name="about_dialog_copyright_note">Copyright © Lopez Mikhael. All rights reserved.</string>
+    <string name="about_dialog_library_link">https://github.com/lopspower/CircularImageView</string>
+
+    <!-- BUTTONS -->
+    <string name="about_dialog_ok_button">OK</string>
+
+
+
+
+    <!-- CONTROLLER ACTIVITY -->
+
+    <!-- BUTTONS -->
+    <string name="controller_activity_back_button">Back</string>
+    <string name="controller_activity_keys_button">Keys</string>
+
+
+
+
+    <!-- KEYS DIALOG -->
+
+    <!-- TEXT VIEwS -->
+    <string name="keys_dialog_forward_title">Key for Forward:</string>
+    <string name="keys_dialog_reverse_title">Key for Reverse:</string>
+    <string name="keys_dialog_left_title">Key for Left:</string>
+    <string name="keys_dialog_right_title">Key for Right:</string>
+    <string name="keys_dialog_brake_title">Key for Brake:</string>
+
+    <!-- EDIT TEXTS -->
+    <string name="keys_dialog_forward_hint">Ex: 1</string>
+    <string name="keys_dialog_reverse_hint">Ex: 2</string>
+    <string name="keys_dialog_left_hint">Ex: 3</string>
+    <string name="keys_dialog_right_hint">Ex: 4</string>
+    <string name="keys_dialog_brake_hint">Ex: 5</string>
+
+    <!-- BUTTONS -->
+    <string name="keys_dialog_save_button">Save</string>
+
+</resources>

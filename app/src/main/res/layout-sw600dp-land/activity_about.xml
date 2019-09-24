@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright 2019 Georgios Trantzas
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+                http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context="com.gmail.giwrgostrantzas.arduinorc.AboutActivity">
+
+
+    <ImageView
+
+        android:id="@+id/about_activity_back_button"
+        style="@style/about_activity_back_button"
+        android:src="@drawable/back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+
+        android:id="@+id/about_activity_circular_image_view"
+        style="@style/about_activity_circular_image_view"
+        android:src="@mipmap/app_icon_round"
+        app:civ_border_color="@color/darkGray"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="#3f51b5"
+        app:civ_shadow_radius="10"
+        app:layout_constraintBottom_toBottomOf="@+id/about_activity_project_link"
+        app:layout_constraintEnd_toStartOf="@+id/about_activity_second_main_text"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/about_activity_first_main_text" />
+
+    <TextView
+
+        android:id="@+id/about_activity_header"
+        style="@style/about_activity_header"
+        android:text="Arduino RC"
+        app:layout_constraintEnd_toEndOf="@+id/about_activity_circular_image_view"
+        app:layout_constraintStart_toStartOf="@+id/about_activity_circular_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/about_activity_circular_image_view" />
+
+    <TextView
+
+        android:id="@+id/about_activity_first_main_text"
+        style="@style/about_activity_first_main_text"
+        android:text="@string/about_activity_first_main_text"
+        app:layout_constraintBottom_toTopOf="@+id/about_activity_second_main_text"
+        app:layout_constraintEnd_toEndOf="@+id/about_activity_second_main_text"
+        app:layout_constraintStart_toStartOf="@+id/about_activity_second_main_text" />
+
+    <TextView
+
+        android:id="@+id/about_activity_second_main_text"
+        style="@style/about_activity_second_main_text"
+        android:layout_marginEnd="8dp"
+        android:text="@string/about_activity_second_main_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/about_activity_circular_image_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+
+        android:id="@+id/about_activity_project_link"
+        style="@style/about_activity_project_link"
+        android:text="@string/about_activity_project_link"
+        app:layout_constraintEnd_toEndOf="@+id/about_activity_second_main_text"
+        app:layout_constraintStart_toStartOf="@+id/about_activity_second_main_text"
+        app:layout_constraintTop_toBottomOf="@+id/about_activity_second_main_text" />
+
+    <Button
+
+        android:id="@+id/about_activity_libraries_button"
+        style="@style/about_activity_libraries_button"
+        android:text="@string/about_activity_libraries_button"
+        app:layout_constraintEnd_toEndOf="@+id/about_activity_project_link"
+        app:layout_constraintStart_toStartOf="@+id/about_activity_project_link"
+        app:layout_constraintTop_toBottomOf="@+id/about_activity_project_link" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

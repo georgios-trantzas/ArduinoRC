@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright 2019 Georgios Trantzas
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+                http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <ImageView
+
+            android:id="@+id/controller_activity_forward_button"
+            style="@style/controller_activity_driver_buttons"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:rotation="270"
+            android:src="@drawable/arrow_icon_white" />
+
+
+        <ImageView
+
+            android:id="@+id/controller_activity_left_button"
+            style="@style/controller_activity_driver_buttons"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:rotation="180"
+            android:src="@drawable/arrow_icon_white" />
+
+        <ImageView
+
+            android:id="@+id/controller_activity_right_button"
+            style="@style/controller_activity_driver_buttons"
+            android:layout_row="1"
+            android:layout_column="2"
+
+            android:rotation="360"
+            android:src="@drawable/arrow_icon_white" />
+
+        <ImageView
+
+            android:id="@+id/controller_activity_reverse_button"
+            style="@style/controller_activity_driver_buttons"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:rotation="90"
+            android:src="@drawable/arrow_icon_white" />
+
+    </GridLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <Button
+
+            android:id="@+id/controller_activity_back_button"
+            style="@style/controller_activity_navigation_buttons"
+            android:text="@string/controller_activity_back_button" />
+
+        <View
+
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#8599a0" />
+
+        <Button
+
+            android:id="@+id/controller_activity_keys_button"
+            style="@style/controller_activity_navigation_buttons"
+            android:text="@string/controller_activity_keys_button" />
+
+    </LinearLayout>
+
+</LinearLayout>
